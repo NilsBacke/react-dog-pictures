@@ -46,7 +46,7 @@ export class PageComponent extends React.Component<PageProps, any> {
 				<InfiniteScroll
 					pageStart={0}
 					loader={
-						<div style={styles.wrapper as any}>
+						<div style={styles.wrapper as any} key={'loadingDiv'}>
 							<Loader />
 						</div>
 					}
@@ -54,7 +54,7 @@ export class PageComponent extends React.Component<PageProps, any> {
 					hasMore={true || false}
 					threshold={100}
 				>
-					<div style={styles.wrapper as any}>
+					<div style={styles.wrapper as any} key={'div'}>
 						{this.props.images.map((url, index) => (
 							<img key={String(index)} src={url} alt='dog' style={{ margin: 12, width: '100%', maxWidth: 500, height: '100%', maxHeight: 500 }} />
 						))}

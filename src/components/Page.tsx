@@ -56,7 +56,7 @@ export class PageComponent extends React.Component<PageProps, any> {
 				>
 					<div style={styles.wrapper as any}>
 						{this.props.images.map((url, index) => (
-							<img key={String(index)} src={url} alt='dog' style={{ margin: 12 }} />
+							<img key={String(index)} src={url} alt='dog' style={{ margin: 12, width: '100%', maxWidth: 500, height: '100%', maxHeight: 500 }} />
 						))}
 					</div>
 				</InfiniteScroll>

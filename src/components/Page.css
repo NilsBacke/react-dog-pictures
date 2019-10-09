@@ -1,0 +1,10 @@
+.select {
+	padding: 12px;
+	display: flex;
+	flex: 1;
+	width: 50%;
+}
+
+.select > div {
+	width: 100%;
+}
